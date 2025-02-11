@@ -1,18 +1,7 @@
-// sort.h
-#ifndef SORT_H
-#define SORT_H
 
-#include "core.h"
+#include "pasha.h"
 
-void sortCars(Car cars[], int n);
-void findMaxDistanceCars(Car cars[], int n);
-
-#endif // SORT_H
-
-// sort.cpp
-#include "sort.h"
-
-// Sort by fuel consumption
+// Сортування за витратою пального
 void sortCars(Car cars[], int n) {
     for (int i = 0; i < n - 1; i++) {
         for (int j = i + 1; j < n; j++) {
@@ -23,7 +12,7 @@ void sortCars(Car cars[], int n) {
     }
 }
 
-// Search for cars that can travel the most without refueling
+// Пошук авто, які можуть проїхати найбільше без дозаправки
 void findMaxDistanceCars(Car cars[], int n) {
     double maxDistance = 0;
     for (int i = 0; i < n; i++) {
