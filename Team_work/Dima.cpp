@@ -1,24 +1,27 @@
 ﻿
+#include "Dima.h"  // Підключення заголовкового файлу, де оголошена функція
+#include <cstring>  // Підключення бібліотеки для роботи з C-рядками (strcmp)
 
-// analysis.cpp
-#include "analysis.h"
-
-// Пошук найпотужнішого легкового і найменш потужного вантажного авто
+// Функція для пошуку найпотужнішого легкового та найменш потужного вантажного авто
 void findMostAndLeastPowerful(Car cars[], int n) {
-    int maxcP = 0, mintP = 10000;
-    string maxcB, mintB;
+    int maxcP = 0, mintP = 10000; // Ініціалізація змінних для потужності
+    string maxcB, mintB; // Змінні для збереження назв брендів авто
 
+    // Прохід по всіх автомобілях у масиві
     for (int i = 0; i < n; i++) {
-        if (string(cars[i].type) == "легковий" && cars[i].power > maxCarPower) {
-            maxcP = cars[i].power;
-            maxcB = cars[i].brand;
+        // Перевіряємо, чи це легковий автомобіль і чи він має найбільшу потужність
+        if (strcmp(cars[i].type, "легковий") == 0 && cars[i].power > maxcP) {
+            maxcP = cars[i].power;  // Оновлення максимальної потужності
+            maxcB = cars[i].brand;  // Оновлення назви бренду
         }
-        if (string(cars[i].type) == "вантажний" && cars[i].power < minTruckPower) {
-            mintP = cars[i].power;
-            mintP = cars[i].brand;
+        // Перевіряємо, чи це вантажний автомобіль і чи він має найменшу потужність
+        if (strcmp(cars[i].type, "вантажний") == 0 && cars[i].power < mintP) {
+            mintP = cars[i].power;  // Оновлення мінімальної потужності
+            mintB = cars[i].brand;  // Оновлення назви бренду
         }
     }
 
+    // Вивід результатів у консоль
     cout << "Найпотужніший легковий: " << maxcB << " (" << maxcP << " к.с.)\n";
     cout << "Найменш потужний вантажний: " << mintB << " (" << mintP << " к.с.)\n";
 }
