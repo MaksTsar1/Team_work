@@ -1,11 +1,4 @@
-﻿#ifndef ANALYSIS_H
-#define ANALYSIS_H
-
-#include "core.h"
-
-void findMostAndLeastPowerful(Car cars[], int n);
-
-#endif // ANALYSIS_H
+﻿
 
 // analysis.cpp
 #include "analysis.h"
