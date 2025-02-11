@@ -1,17 +1,25 @@
-﻿#include "maksimilian.h"
-#include "maksim.h"
-#include "dima.h"
-#include "pasha.h"
+﻿#include "maksimilian.h"  // Підключення заголовочного файлу зі структурою Car і функціями роботи з файлами
+#include "maksim.h"       // Підключення функцій фільтрації авто
+#include "dima.h"         // Підключення функції пошуку потужних і слабких авто
+#include "pasha.h"        // Підключення функцій сортування і пошуку авто з найбільшим запасом ходу
 
 int main() {
-    const string filename = "cars.dat";
-    Car cars[100];
+    const string filename = "cars.dat";  // Ім'я файлу збереження автомобілів
+    Car cars[100];  // Масив для зберігання автомобілів (максимум 100)
+
+    // Завантажуємо дані з бінарного файлу
     int n = loadFromBinary(cars, filename);
 
     cout << "Виберіть режим роботи...\n";
 
     // Додати виклики функцій тут
+    // Наприклад:
+    // sortCars(cars, n);  // Виклик функції сортування автомобілів
+    // findMostAndLeastPowerful(cars, n);  // Виклик функції пошуку найпотужнішого і найслабшого авто
+    // filterByBrand(cars, n, "Toyota");  // Фільтрація за маркою
 
+    // Збереження результатів у текстовий файл
     saveToText(cars, n, "results.txt");
-    return 0;
+
+    return 0;  // Завершення програми
 }
