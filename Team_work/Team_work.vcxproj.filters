@@ -15,14 +15,34 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Team_work.cpp">
+    <ClCompile Include="..\..\..\..\Desktop\Git\Team_work\Team_work\Pasha.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Pasha.cpp">
+    <ClCompile Include="..\..\..\..\Desktop\Git\Team_work\Team_work\Dima.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Dima.cpp">
+    <ClCompile Include="..\..\..\..\Desktop\Git\Team_work\Team_work\main.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\..\Desktop\Git\Team_work\Team_work\Maksim.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Desktop\Git\Team_work\Team_work\Maksimilian.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\Desktop\Git\Team_work\Team_work\Maksimilian.h">
+      <Filter>Исходные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Desktop\Git\Team_work\Team_work\Pasha.h">
+      <Filter>Исходные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Desktop\Git\Team_work\Team_work\Dima.h">
+      <Filter>Исходные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Desktop\Git\Team_work\Team_work\Maksim.h">
+      <Filter>Исходные файлы</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

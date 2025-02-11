@@ -139,9 +139,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Dima.cpp" />
-    <ClCompile Include="Pasha.cpp" />
-    <ClCompile Include="Team_work.cpp" />
+    <ClCompile Include="..\..\..\..\Desktop\Git\Team_work\Team_work\Dima.cpp" />
+    <ClCompile Include="..\..\..\..\Desktop\Git\Team_work\Team_work\main.cpp" />
+    <ClCompile Include="..\..\..\..\Desktop\Git\Team_work\Team_work\Maksim.cpp" />
+    <ClCompile Include="..\..\..\..\Desktop\Git\Team_work\Team_work\Maksimilian.cpp" />
+    <ClCompile Include="..\..\..\..\Desktop\Git\Team_work\Team_work\Pasha.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\Desktop\Git\Team_work\Team_work\Dima.h" />
+    <ClInclude Include="..\..\..\..\Desktop\Git\Team_work\Team_work\Maksim.h" />
+    <ClInclude Include="..\..\..\..\Desktop\Git\Team_work\Team_work\Maksimilian.h" />
+    <ClInclude Include="..\..\..\..\Desktop\Git\Team_work\Team_work\Pasha.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
