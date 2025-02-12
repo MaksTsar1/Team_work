@@ -21,6 +21,8 @@ struct Car {
 
 // Функції роботи з файлами
 
+void add(Car newCar, const string& filename);
+
 // Збереження масиву автомобілів у бінарний файл
 void saveToBinary(Car cars[], int n, const string& filename);
 

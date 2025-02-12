@@ -40,3 +40,14 @@ void saveToText(Car cars[], int n, const string& filename) {
     }
     file.close();  // Закриваємо файл
 }
+
+void add(Car newCar, const string& filename) {
+    ofstream file(filename, ios::binary | ios::app); // Відкриваємо файл у режимі допису
+    if (!file) {
+        cout << "Помилка відкриття файлу!\n";
+        return;
+    }
+    file.write((char*)&newCar, sizeof(Car)); // Записуємо нову машину у файл
+    file.close();
+}
+
